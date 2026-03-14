@@ -1,0 +1,45 @@
+{
+  "name": "prolog-wasm-full",
+  "version": "0.1.0",
+  "description": "SWI-Prolog 10.1.4 in WebAssembly — zero dependencies. Foreign predicates in JS, CLP(FD), clause streaming, ergonomic query API.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "vendor",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^4.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wi-ski/prolog-wasm-full"
+  },
+  "keywords": [
+    "prolog",
+    "swi-prolog",
+    "wasm",
+    "webassembly",
+    "logic-programming",
+    "constraint-solving",
+    "clpfd",
+    "rules-engine",
+    "foreign-predicates"
+  ]
+}
