@@ -1,6 +1,6 @@
 {
   "name": "prolog-wasm-full",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SWI-Prolog 10.1.4 in WebAssembly — zero dependencies. Foreign predicates in JS, CLP(FD), clause streaming, ergonomic query API.",
   "type": "module",
   "main": "./dist/index.js",
